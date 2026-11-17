@@ -1,0 +1,147 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  background: #f4f1fb;
+  font-family: Arial, sans-serif;
+  color: #25213b;
+}
+
+header {
+  background: #50358b;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+header p {
+  margin-bottom: 0;
+  color: #e4dafa;
+}
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.form-section,
+.notes-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+  color: #50358b;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d5cce5;
+  border-radius: 7px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+button {
+  background: #6545a4;
+  color: white;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #442b79;
+}
+
+.cancel-btn {
+  background: #777;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.note-card {
+  background: #faf8ff;
+  border: 1px solid #e4dcf2;
+  border-radius: 10px;
+  padding: 18px;
+  overflow-wrap: anywhere;
+}
+
+.note-card h3 {
+  color: #50358b;
+  margin-top: 0;
+}
+
+.note-card p {
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.delete-btn {
+  background: #d64b5a;
+}
+
+.delete-btn:hover {
+  background: #ad2636;
+}
+
+.empty {
+  color: #777;
+  text-align: center;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  color: #777;
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 94%;
+  }
+
+  .form-section,
+  .notes-section {
+    padding: 18px;
+  }
+}
